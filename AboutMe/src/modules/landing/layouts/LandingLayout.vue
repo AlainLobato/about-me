@@ -8,33 +8,32 @@
             </RouterLink>
         </div>
         <nav class="justify-center space-x-4 flex items-center h-10 sm:space-x-6 sm:ml-auto mb-5 sm:mb-0">
-            <section class="flex flex-col items-center">
-              <RouterLink to="/"> Home </RouterLink>
-              <span v-if="route.path === '/'" class="bg-gray-900 h-1 w-15 opacity-90 rounded-xl"></span>
+            <section class="flex flex-col items-center hover:scale-105 transition-transform hover:text-orange-600">
+              <RouterLink :class="{ 'text-orange-600': route.path === '/' }" to="/"> Home </RouterLink>
             </section>
-            <section class="flex flex-col items-center">
-              <RouterLink to="/projects">Projects </RouterLink>
-              <span v-if="route.path === '/projects'" class="bg-gray-900 h-1 w-17 opacity-90 rounded-xl"></span>
+            <section class="flex flex-col items-center hover:scale-105 transition-transform hover:text-orange-600">
+              <RouterLink :class="{ 'text-orange-600': route.path === '/projects' }" to="/projects">Projects </RouterLink>
             </section>
-            <section class="flex flex-col items-center">
-              <RouterLink to="/personal">Personal </RouterLink>
-              <span v-if="route.path === '/personal'" class="bg-gray-900 h-1 w-17 opacity-90 rounded-xl"></span>
+            <section class="flex flex-col items-center hover:scale-105 transition-transform hover:text-orange-600">
+              <RouterLink :class="{ 'text-orange-600': route.path === '/personal' }" to="/personal">Personal </RouterLink>
             </section>
-            <section class="flex flex-col items-center">
-              <RouterLink to="/contact"> Contact </RouterLink>
-              <span v-if="route.path === '/contact'" class="bg-gray-900 h-1 w-17 opacity-90 rounded-xl"></span>
+            <section class="flex flex-col items-center hover:scale-105 transition-transform hover:text-orange-600">
+              <RouterLink :class="{ 'text-orange-600': route.path === '/contact' }" to="/contact"> Contact </RouterLink>
             </section>
         </nav>
-        <button class="rounded-full bg-black w-8 h-8">
+        <button class="rounded-full bg-black w-8 h-8 cursor-pointer flex justify-center items-center hover:bg-gray-800 transition-colors">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+          </svg>
         </button>
     </header>
 
-    <main class="flex-1 flex items-center justify-center">
+    <main class="flex-1 flex justify-center">
       <RouterView />
     </main>
 
     <footer class="flex items-center h-14 px-4 border-t border-gray-300 sm:h-16 md:px-6 lg:px-8">
-      <p class="flex-1 text-sm text-gray-500 text-center m-4 lg:m-1">
+      <p class="flex-1 text-sm text-gray-500 text-center m-4 lg:m-3">
         © {{ new Date().getFullYear() }} Alain Lobato (DevLine).
       </p>
     </footer>
@@ -43,5 +42,6 @@
 
 <script setup lang="ts">
 import { useRoute } from 'vue-router';
+
 const route = useRoute();
 </script>
