@@ -78,7 +78,7 @@ const projects = [
     imageName: 'numanalysis.png',
     repositoryUrl: 'https://github.com/AlainLobato/PIA-AD',
     websiteUrl: 'https://alainlobato.github.io/PIA-AD/',
-    technologies: ['HTML', 'CSS', 'Java_Script', 'Bootstrap', 'Github'],
+    technologies: ['HTML', 'CSS', 'JavaScript', 'Bootstrap', 'Github'],
   },
   {
     title: 'Who is That Pokemon: Game',
@@ -103,7 +103,7 @@ const projects = [
     imageName: 'kidfit.png',
     repositoryUrl: 'https://github.com/AlainLobato/KidFit-Store',
     websiteUrl: 'https://alainlobato.github.io/KidFit-Store/index.html',
-    technologies: ['HTML', 'CSS', 'Java_Script', 'Bootstrap', 'Github'],
+    technologies: ['HTML', 'CSS', 'JavaScript', 'Bootstrap', 'Github'],
   },
   {
     title: 'Cashy App',
@@ -118,7 +118,7 @@ const projects = [
     description:
       "A simple and elegant wedding invitation website to share all the details about the big day with friends and family. It includes sections for the couple's story, event details, RSVP functionality, and a form conected with an Excel to administrate the guest list.",
     imageName: 'invitation.png',
-    technologies: ['HTML', 'CSS', 'Java_Script', 'Github', 'Google'],
+    technologies: ['HTML', 'CSS', 'JavaScript', 'Github', 'Google'],
     websiteUrl: 'https://userdotnet10.github.io/invitacion',
   },
   {
@@ -136,7 +136,7 @@ const projects = [
     imageName: 'agenda.png',
     repositoryUrl: 'https://github.com/AlainLobato/Agenda-API',
     websiteUrl: 'https://agenda-api-c47p.onrender.com/',
-    technologies: ['React', 'Nodejs', 'Java_Script', 'Express', 'Mongo', 'Vite'],
+    technologies: ['React', 'Nodejs', 'JavaScript', 'Express', 'Mongo', 'Vite'],
   },
   {
     title: 'Monitoring and Backup System',

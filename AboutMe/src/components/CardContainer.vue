@@ -62,13 +62,8 @@
 </template>
 
 <script setup lang="ts">
-import { icons_map } from '@/utils/languageIcons'
-type Iconkey = keyof typeof icons_map
-
-const getIcon = (tech: string) => {
-  const key = tech.toLowerCase() as Iconkey
-  return icons_map[key] ? icons_map[key] : null
-}
+import { icons_map } from '@/utils/languageIcons';
+import { getIcon } from '@/utils/getIcon';
 
 defineProps<{
   title: string

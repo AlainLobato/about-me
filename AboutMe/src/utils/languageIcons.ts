@@ -1,4 +1,4 @@
-import SendIcon from '@/components/icons/SendIcon.vue'
+import SendIcon from '@icons/SendIcon.vue'
 import AndroidStudioIcon from '@icons/AndroidStudioIcon.vue'
 import AngularIcon from '@icons/AngularIcon.vue'
 import ArduinoIcon from '@icons/ArduinoIcon.vue'
@@ -32,12 +32,18 @@ import TailwindIcon from '@icons/TailwindIcon.vue'
 import TypeScriptIcon from '@icons/TypeScriptIcon.vue'
 import ViteIcon from '@icons/ViteIcon.vue'
 import VueIcon from '@icons/VueIcon.vue'
-import MailIcon from '@/components/icons/MailIcon.vue'
+import MailIcon from '@icons/MailIcon.vue'
+import SearchIcon from '@icons/SearchIcon.vue'
+import UserIcon from '@icons/UserIcon.vue'
+import AtSignIcon from '@icons/AtSignIcon.vue'
+import LinkedinIcon from '@icons/LinkedinIcon.vue'
+import PenIcon from '@icons/PenIcon.vue'
 
 export const icons_map = {
   androidstudio: AndroidStudioIcon,
   angular: AngularIcon,
   arduino: ArduinoIcon,
+  at_sign: AtSignIcon,
   bash: BashIcon,
   bootstrap: BootstrapIcon,
   cpp: CPPIcon,
@@ -52,22 +58,26 @@ export const icons_map = {
   grafana: GrafanaIcon,
   html: HTMLIcon,
   ionic: IonicIcon,
-  java_script: JSIcon,
+  javascript: JSIcon,
   jenkins: JenkinsIcon,
+  linkedin: LinkedinIcon,
   linux: LinuxIcon,
+  mail: MailIcon,
   mongo: MongoIcon,
   nodejs: NodeJSIcon,
   pandas: PandasIcon,
+  pen: PenIcon,
   plotly: PlotlyIcon,
   prometheus: PrometheusIcon,
   python: PythonIcon,
   rails: RailsIcon,
   react: ReactIcon,
+  search: SearchIcon,
+  send: SendIcon,
   sqlite: SqLiteIcon,
   tailwind: TailwindIcon,
   typescript: TypeScriptIcon,
+  user: UserIcon,
   vite: ViteIcon,
   vue: VueIcon,
-  send: SendIcon,
-  mail: MailIcon,
 }

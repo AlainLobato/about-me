@@ -6,7 +6,7 @@
       >
         {{ title }}
       </h1>
-      <p class="text-base ml-8 mr-8 text-gray-600 sm:text-xl lg:text-lg xl:text-xl">
+      <p class="text-base ml-8 mr-8 text-gray-600 sm:text-md lg:text-lg xl:text-xl">
         {{ description }}
       </p>
     </div>
