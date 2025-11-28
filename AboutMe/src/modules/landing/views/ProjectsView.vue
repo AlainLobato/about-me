@@ -44,7 +44,7 @@
         :key="index"
         :title="project.title"
         :description="project.description"
-        :image-path="`/src/assets/images/${project.imageName}`"
+        :image-path="`/assets/images/${project.imageName}`"
         :repositoryUrl="project.repositoryUrl"
         :websiteUrl="project.websiteUrl"
         :technologies="project.technologies"
