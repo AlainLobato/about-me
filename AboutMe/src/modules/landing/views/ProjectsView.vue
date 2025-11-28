@@ -1,19 +1,9 @@
 <template>
   <div class="bg-white flex flex-col w-screen gap-4 pt-8 items-center">
-    <div class="flex items-center justify-center m-2">
-      <div class="flex flex-col text-center gap-3 lg:w-250">
-        <h1
-          class="text-orange-600 md:block text-4xl font-extrabold lg:text-5xl xl:text-6xl tracking-tight sm:leading-none"
-        >
-          My Projects
-        </h1>
-        <p class="text-base ml-8 mr-8 text-gray-600 sm:text-xl lg:text-lg xl:text-xl">
-          Here are some of the projects I've worked on. Feel free to explore and check out the code
-          repositories! The disable buttons are for projects that are still in development, not yet
-          publicly available or not hosted online.
-        </p>
-      </div>
-    </div>
+    <HeaderContainer
+      title="My Projects"
+      description="Here are some of the projects I've worked on. Feel free to explore and check out the code repositories! The disable buttons are for projects that are still in development, not yet publicly available or not hosted online."
+    />
 
     <div class="flex w-full overflow-hidden items-center justify-center px-10 pb-2.5">
       <div class="w-full max-w-2xl bg-white rounded-lg shadow-md shadow-blue-gray-500/40">
@@ -78,6 +68,7 @@
 <script setup lang="ts">
 import { ref, computed } from 'vue'
 import CardContainer from '@/components/CardContainer.vue'
+import HeaderContainer from '@/components/HeaderContainer.vue'
 
 const projects = [
   {
