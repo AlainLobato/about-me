@@ -5,10 +5,11 @@
         <div class="flex items-center p-2">
             <RouterLink class="flex items-center gap-2 font-semibold" to="/">
             <img alt="Logo" class="rounded-full w-12 h-auto" src="@images/github.jpeg"/>
+            <span class="text-gray-900 py-1 rounded-full font-normal">Alain Lobato</span>
             </RouterLink>
         </div>
         <nav class="justify-center space-x-4 flex items-center h-10 sm:space-x-6 sm:ml-auto mb-5 sm:mb-0">
-            <section class="flex flex-col items-center hover:scale-105 transition-transform hover:text-orange-600">
+            <section class="flex flex-col items-center hover:scale-105 transition-transform hover:text-orange-600 ">
               <RouterLink :class="{ 'text-orange-600': route.path === '/' }" to="/"> Home </RouterLink>
             </section>
             <section class="flex flex-col items-center hover:scale-105 transition-transform hover:text-orange-600">
