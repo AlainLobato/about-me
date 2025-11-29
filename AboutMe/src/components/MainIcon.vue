@@ -1,6 +1,6 @@
 <template>
     <img
-      class="relative flex h-14 w-14 shrink-0 overflow-hidden"
+      class="relative flex h-10 w-10 sm:w-14 sm:h-14 shrink-0 overflow-hidden"
       :alt="'icon-' + props.iconName"
       :src="getIcon(props.iconName)"
     />

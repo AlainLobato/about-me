@@ -17,7 +17,7 @@
           class="absolute right-0 flex bg-white/80 backdrop-blur-md rounded-full shadow-md shadow-blue-gray-500/20 justify-center items-center hover:scale-105 transition-transform hover:cursor-pointer"
         >
           <a :href="repositoryUrl" target="_blank">
-            <component :is="icons_map.github" class="w-10 h-10 text-gray-900 hover:text-gray-700" />
+            <component :is="GithubIcon" class="w-10 h-10 text-gray-900 hover:text-gray-700" />
           </a>
         </div>
         <div class="p-6">
@@ -62,7 +62,7 @@
 </template>
 
 <script setup lang="ts">
-import { icons_map } from '@/utils/languageIcons';
+import GithubIcon from './icons/GithubIcon.vue';
 import { getIcon } from '@/utils/getIcon';
 
 defineProps<{

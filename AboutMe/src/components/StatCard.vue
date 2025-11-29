@@ -7,7 +7,7 @@
             >
                 {{ label }}
             </div>
-            <p class="text-4xl font-bold text-gray-900">{{ value }}</p>
+            <p class="text-3xl sm:text-4xl font-bold text-gray-900">{{ value }}</p>
             </div>
         </div>
     </div>

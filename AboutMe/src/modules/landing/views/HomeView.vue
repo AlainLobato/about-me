@@ -20,13 +20,13 @@
               <button
                 class="inline-flex items-center hover:bg-black/90 hover:text-orange-600 text-white bg-black justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2 w-full lg:w-auto"
               >
-                <component :is="icons_map.github" class="w-7 h-7 mr-2" />
+                <component :is="GithubIcon" class="w-7 h-7 mr-2" />
                 <a href="https://github.com/AlainLobato" target="_blank"> Github profile </a>
               </button>
               <button
                 class="inline-flex hover:ring-gray-400 hover:bg-gray-100 hover:text-orange-600 items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 mt-3 w-full lg:mt-0 lg:ml-3 lg:w-auto"
               >
-                <component :is="icons_map.send" class="w-7 h-7 mr-2" />
+                <component :is="SendIcon" class="w-7 h-7 mr-2" />
                 <RouterLink to="/contact"> Contact Me </RouterLink>
               </button>
             </div>
@@ -67,7 +67,8 @@
 </template>
 
 <script setup lang="ts">
-import { icons_map } from '@/utils/languageIcons'
 import StatCard from '@/components/StatCard.vue'
 import MainIcon from '@/components/MainIcon.vue';
+import SendIcon from '@/components/icons/SendIcon.vue';
+import GithubIcon from '@/components/icons/GithubIcon.vue';
 </script>

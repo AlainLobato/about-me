@@ -38,6 +38,7 @@ import UserIcon from '@icons/UserIcon.vue'
 import AtSignIcon from '@icons/AtSignIcon.vue'
 import LinkedinIcon from '@icons/LinkedinIcon.vue'
 import PenIcon from '@icons/PenIcon.vue'
+import MexicoFlag from '@icons/MexicoFlag.vue'
 
 export const icons_map = {
   androidstudio: AndroidStudioIcon,
@@ -63,6 +64,7 @@ export const icons_map = {
   linkedin: LinkedinIcon,
   linux: LinuxIcon,
   mail: MailIcon,
+  mexico: MexicoFlag,
   mongo: MongoIcon,
   nodejs: NodeJSIcon,
   pandas: PandasIcon,

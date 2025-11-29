@@ -26,25 +26,38 @@
               />
             </ul>
           </div>
-          <div class="mt-12">
-            <h2 class="text-lg font-extrabold">Socials</h2>
-            <ul class="flex mt-3 space-x-4">
-              <LinkedIcon
-                link="https://www.linkedin.com/in/alain-lobato/"
-                icon-name="linkedin"
-              />
+          <div class="mt-12 flex gap-8">
+            <div>
+              <h2 class="text-lg font-extrabold">Socials</h2>
+              <ul class="flex mt-3 space-x-4">
+                <LinkedIcon
+                  link="https://www.linkedin.com/in/alain-lobato/"
+                  icon-name="linkedin"
+                />
 
-              <LinkedIcon
-                link="https://github.com/AlainLobato"
-                icon-name="github"
-              />
-            </ul>
+                <LinkedIcon
+                  link="https://github.com/AlainLobato"
+                  icon-name="github"
+                />
+              </ul>
+            </div>
+            <div>
+              <h2 class="text-lg font-extrabold">Ubication</h2>
+              <div class="flex items-start justify-center mt-3">
+                <MexicoFlag class="w-12 h-12 min-w-12 mr-2" />
+                <span class="text-sm text-gray-600 mt-1">
+                  Monterrey, Nuevo León
+                  <br>
+                  México
+                </span>
+              </div>
+            </div>
           </div>
         </div>
 
         <div>
           <span class="mb-5 text-gray-600 flex items-center">
-            <component :is="icons_map.send" class="w-6 h-6 inline-block mr-2 text-gray-600" />
+            <component :is="SendIcon" class="w-6 h-6 inline-block mr-2 text-gray-600" />
             Send a Mail
           </span>
           <div class="flex flex-col space-y-4 justify-center w-full">
@@ -60,6 +73,26 @@
           </div>
         </div>
       </div>
+
+      <div
+        class="grid sm:grid-cols-2 items-center gap-16 max-w-4xl bg-white shadow-[0_2px_10px_-3px_rgba(6,81,237,0.3)] rounded-md t-[sans-serif] p-6 md:p-12 w-full flex-wrap text-wrap mt-12"
+      >
+        <div class="flex flex-col">
+          <h1 class="text-3xl font-extrabold">Schedule Available</h1>
+          <span class="text-sm sm:text-base text-gray-600 mt-3 ">
+            I am available for meetings and discussions during the following hours. Feel free to
+            reach out to me within these times.
+          </span>
+        </div>
+        <div class="flex flex-col">
+          <h2 class="text-lg font-extrabold">Time Zone: GMT-6 (Central Standard Time)</h2>
+          <ul class="mt-3 space-y-1">
+            <li class="text-sm sm:text-base text-gray-700">Monday to Friday: 9:00 AM - 6:00 PM</li>
+            <li class="text-sm sm:text-base text-gray-700">Saturday: 10:00 AM - 4:00 PM</li>
+            <li class="text-sm sm:text-base text-gray-700">Sunday: Closed</li>
+          </ul>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -69,6 +102,8 @@ import HeaderContainer from '@/components/HeaderContainer.vue'
 import InputForm from '@/components/InputForm.vue';
 import LinkedIcon from '@/components/LinkedIcon.vue';
 import TextAreaForm from '@/components/TextAreaForm.vue';
-import { icons_map } from '@/utils/languageIcons';
+import MexicoFlag from '@/components/icons/MexicoFlag.vue';
+
+import SendIcon from '@/components/icons/SendIcon.vue';
 
 </script>
