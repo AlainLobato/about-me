@@ -7,7 +7,7 @@
         <div
           class="relative mx-4 mt-4 overflow-hidden text-white shadow-lg rounded-xl bg-blue-gray-500 bg-clip-border shadow-blue-gray-500/40 justify-center flex"
         >
-          <img class="object-cover h-60 max-h-60" :src="imagePath" alt="Project Image" />
+          <img class="object-cover h-60 max-h-60" :src="getImagePath(imagePath)" alt="Project Image" />
           <div
             class="absolute inset-0 w-full h-full to-bg-black-10 bg-linear-to-tr from-transparent via-transparent to-black/60"
           ></div>
@@ -64,6 +64,7 @@
 <script setup lang="ts">
 import { icons_map } from '@/utils/languageIcons';
 import { getIcon } from '@/utils/getIcon';
+import { getImagePath } from '@/utils/getImagePath';
 
 defineProps<{
   title: string
@@ -73,4 +74,5 @@ defineProps<{
   technologies: Array<string>
   websiteUrl?: string
 }>()
+
 </script>

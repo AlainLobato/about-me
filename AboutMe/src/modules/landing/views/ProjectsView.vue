@@ -44,7 +44,7 @@
         :key="index"
         :title="project.title"
         :description="project.description"
-        :image-path="getImagePath(project.imageName)"
+        :image-path="project.imageName"
         :repositoryUrl="project.repositoryUrl"
         :websiteUrl="project.websiteUrl"
         :technologies="project.technologies"
@@ -69,7 +69,6 @@
 import { ref, computed } from 'vue'
 import CardContainer from '@/components/CardContainer.vue'
 import HeaderContainer from '@/components/HeaderContainer.vue'
-import { getImagePath } from '@/utils/getImagePath'
 
 const projects = [
   {
@@ -176,4 +175,5 @@ const filteredProjects = computed(() => {
       ),
   )
 })
+
 </script>
