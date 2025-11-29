@@ -78,7 +78,7 @@
         class="grid sm:grid-cols-2 items-center gap-16 max-w-4xl bg-white shadow-[0_2px_10px_-3px_rgba(6,81,237,0.3)] rounded-md t-[sans-serif] p-6 md:p-12 w-full flex-wrap text-wrap mt-12"
       >
         <div class="flex flex-col">
-          <h1 class="text-3xl font-extrabold">Schedule Available</h1>
+          <p class="text-3xl font-extrabold">Schedule Available</p>
           <span class="text-lg sm:text-base text-gray-600 mt-3 ">
             I am available for meetings and discussions during the following hours. Feel free to
             reach out to me within these times.

@@ -22,11 +22,11 @@
         </div>
         <div class="p-6">
           <div class="flex items-center justify-between mb-3">
-            <h5
+            <p
               class="block font-sans text-2xl sm:text-xl antialiased font-medium leading-snug tracking-normal text-blue-gray-900"
             >
               {{ title }}
-            </h5>
+            </p>
           </div>
           <p
             class="block font-sans antialiased font-light leading-relaxed text-gray-700 h-35 min-h-35 overflow-scroll text-lg sm:text-base"
@@ -49,8 +49,9 @@
               :class="{
                 block: true,
                 'w-full select-none rounded-lg bg-gray-900 py-3.5 px-7 text-center align-middle font-sans text-sm font-bold uppercase text-white shadow-md shadow-gray-900/10 transition-all hover:shadow-lg hover:shadow-gray-900/20 hover:bg-gray-800 hover:cursor-pointer': true,
-                'opacity-50 cursor-not-allowed': !websiteUrl,
+                'opacity-80 cursor-not-allowed hover:cursor-not-allowed': !websiteUrl
               }"
+              :disabled="!websiteUrl"
             >
               Visit Website
             </button>

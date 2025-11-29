@@ -84,6 +84,7 @@ const projects = [
     description:
       'A personal portfolio website to showcase my skills, projects, and experience. It includes sections for about me, projects, skills, and contact information, all designed with a clean and modern aesthetic.',
     image: portfolio,
+    websiteUrl: 'https://about-me-mjei.vercel.app/',
     repositoryUrl: 'https://github.com/AlainLobato/about-me',
     technologies: ['Vue', 'TypeScript', 'Tailwind', 'Vite', 'Github'],
   },
