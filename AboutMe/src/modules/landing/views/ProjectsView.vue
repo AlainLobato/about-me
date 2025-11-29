@@ -7,34 +7,12 @@
 
     <div class="flex w-full overflow-hidden items-center justify-center px-10 pb-2.5">
       <div class="w-full max-w-2xl bg-white rounded-lg shadow-md shadow-blue-gray-500/40">
-        <div
-          class="flex items-center px-3.5 py-2 text-gray-400 group hover:ring-1 hover:ring-gray-300 ring-inset"
-        >
-          <svg
-            class="mr-2 h-5 w-5 stroke-slate-400"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="2"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-            ></path>
-          </svg>
-          <input
-            class="block appearance-none bg-transparent text-base text-gray-700 placeholder:text-gray-400 focus:outline-none sm:text-sm sm:leading-6 w-sm sm:w-md lg:w-lg xl:w-xl"
-            placeholder="Search by title or technology..."
-            aria-label="Search components"
-            id="headlessui-combobox-input-:r5n:"
-            role="combobox"
-            type="text"
-            aria-expanded="false"
-            aria-autocomplete="list"
-            style="caret-color: rgb(107, 114, 128)"
-            v-model="filterValue"
-          />
-        </div>
+        <InputForm
+          placeholder="Search projects by title or technology..."
+          type="text"
+          icon="search"
+          v-model="filterValue"
+        />
       </div>
     </div>
 
@@ -81,6 +59,7 @@ import pokemongame from '@images/pokemongame.png'
 import portfolio from '@images/portfolio.png'
 import savemymoney from '@images/savemymoney.png'
 import grafana from '@images/grafana.png'
+import InputForm from '@/components/InputForm.vue'
 
 const projects = [
   {
@@ -179,6 +158,7 @@ const filteredProjects = computed(() => {
   if (!filterValue.value) {
     return projects
   }
+
   return projects.filter(
     (project) =>
       project.title.toLowerCase().includes(filterValue.value.toLowerCase()) ||

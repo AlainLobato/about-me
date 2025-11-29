@@ -29,7 +29,7 @@
             </h5>
           </div>
           <p
-            class="block font-sans antialiased font-light leading-relaxed text-gray-700 h-35 min-h-35 overflow-scroll text-lg sm:text-md"
+            class="block font-sans antialiased font-light leading-relaxed text-gray-700 h-35 min-h-35 overflow-scroll text-lg sm:text-base"
           >
             {{ description }}
           </p>

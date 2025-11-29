@@ -11,7 +11,7 @@
       >
         <div class="flex flex-col">
           <h1 class="text-3xl font-extrabold">Get In Touch</h1>
-          <span class="text-lg sm:text-md text-gray-600 mt-3 ">
+          <span class="text-lg sm:text-base text-gray-600 mt-3 ">
             It can be difficult find the right words to start a conversation, but don't worry! Just
             fill out the form and I'll get back to you as soon as possible.
           </span>
@@ -45,7 +45,7 @@
               <h2 class="text-lg font-extrabold">Ubication</h2>
               <div class="flex items-start justify-center mt-3">
                 <MexicoFlag class="w-12 h-12 min-w-12 mr-2" />
-                <span class="text-lg sm:text-md text-gray-600 mt-1">
+                <span class="text-lg sm:text-base text-gray-600 mt-1">
                   Monterrey, Nuevo León
                   <br>
                   México
