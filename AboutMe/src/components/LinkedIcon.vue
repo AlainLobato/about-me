@@ -12,7 +12,7 @@
             </div>
             <section v-if="title">
                 <small class="block">{{ title }}</small>
-                <strong>{{ text }}</strong>
+                <strong class="block text-lg sm:text-md">{{ text }}</strong>
             </section>
         </a>
     </li>
