@@ -33,7 +33,7 @@
           </div>
         </div>
         <div class="mt-16 lg:mt-24 xl:mt-0 lg:col-span-5">
-          <p class="text-base ml-8 mr-8 text-gray-600 sm:text-xl lg:text-lg xl:text-xl">
+          <p class="text-lg ml-2 mr-2 md:ml-8 md:mr-8 text-gray-600">
             Transforming complex problems into solutions through continuous learning. I am a
             Full-stack Developer with knowledge in start-up environments, data analysis, and IoT
             ecosystems.

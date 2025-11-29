@@ -23,13 +23,13 @@
         <div class="p-6">
           <div class="flex items-center justify-between mb-3">
             <h5
-              class="block font-sans text-xl antialiased font-medium leading-snug tracking-normal text-blue-gray-900"
+              class="block font-sans text-2xl sm:text-xl antialiased font-medium leading-snug tracking-normal text-blue-gray-900"
             >
               {{ title }}
             </h5>
           </div>
           <p
-            class="block font-sans text-base antialiased font-light leading-relaxed text-gray-700 h-35 min-h-35 overflow-scroll"
+            class="block font-sans antialiased font-light leading-relaxed text-gray-700 h-35 min-h-35 overflow-scroll text-lg sm:text-md"
           >
             {{ description }}
           </p>
