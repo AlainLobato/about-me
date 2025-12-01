@@ -1,14 +1,14 @@
-import agenda from '@images/agenda.jpg'
-import cashyapp from '@images/cashyapp.jpeg'
-import datamining from '@images/datamining.jpg'
-import iot from '@images/iot.png'
-import invitation from '@images/invitation.jpg'
-import kidfit from '@images/kidfit.jpg'
-import numanalysis from '@images/numanalysis.jpg'
+import agenda from '@images/agenda.webp'
+import cashyapp from '@images/cashyapp.webp'
+import datamining from '@images/datamining.webp'
+import iot from '@images/iot.webp'
+import invitation from '@images/invitation.webp'
+import kidfit from '@images/kidfit.webp'
+import numanalysis from '@images/numanalysis.webp'
 import pokemongame from '@images/pokemongame.jpg'
 import portfolio from '@images/portfolio.jpg'
 import savemymoney from '@images/savemymoney.png'
-import grafana from '@images/grafana.jpg'
+import grafana from '@images/grafana.webp'
 
 export const projects = [
   {

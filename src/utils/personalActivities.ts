@@ -1,5 +1,5 @@
 import photography from '@images/photo.jpeg'
-import music from '@images/music.jpeg'
+import music from '@images/music.webp'
 import cooking from '@images/tortillas.jpeg'
 
 export const personalActivities = [

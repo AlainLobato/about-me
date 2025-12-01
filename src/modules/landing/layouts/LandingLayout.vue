@@ -4,7 +4,7 @@
     <header class="flex justify-center items-center space-x-2 h-28 border-b border-gray-300 sm:h-16 lg:px-8 flex-col sm:flex-row">
       <div class="flex items-center p-2 hover:scale-105 transition-transform">
           <RouterLink class="flex items-center gap-2 font-semibold" to="/">
-          <img alt="Logo" class="rounded-full w-12 h-auto" src="@images/github.jpeg"/>
+          <img alt="Logo" class="rounded-full w-12 h-auto" src="@images/github.webp"/>
           <span class="text-gray-900 py-1 rounded-full font-normal">Alain Lobato</span>
           </RouterLink>
       </div>

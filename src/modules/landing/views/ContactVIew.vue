@@ -7,11 +7,11 @@
 
     <div class="flex flex-col flex-wrap my-6 items-center w-full px-4 sm:px-6 lg:px-8">
       <div
-        class="grid sm:grid-cols-2 items-center gap-16 max-w-4xl bg-white shadow-[0_2px_10px_-3px_rgba(6,81,237,0.3)] rounded-md t-[sans-serif] p-8 w-full flex-wrap text-wrap"
+        class="grid sm:grid-cols-2 items-center gap-10 max-w-4xl bg-white shadow-lg rounded-3xl t-[sans-serif] p-14 w-full flex-wrap text-wrap"
       >
         <div class="flex flex-col">
           <h1 class="text-3xl font-extrabold">Get In Touch</h1>
-          <span class="text-lg sm:text-base text-gray-600 mt-3 ">
+          <span class="text-lg sm:text-base text-gray-700 mt-3">
             It can be difficult find the right words to start a conversation, but don't worry! Just
             fill out the form and I'll get back to you as soon as possible.
           </span>
@@ -43,9 +43,9 @@
             </div>
             <div>
               <h2 class="text-lg font-extrabold">Ubication</h2>
-              <div class="flex items-start justify-center mt-3">
+              <div class="flex flex-col md:flex-row items-start justify-center mt-3">
                 <MexicoFlag class="w-12 h-12 min-w-12 mr-2" />
-                <span class="text-lg sm:text-base text-gray-600 mt-1">
+                <span class="text-lg sm:text-base text-gray-700">
                   Monterrey, Nuevo León
                   <br>
                   México
@@ -55,9 +55,9 @@
           </div>
         </div>
 
-        <div>
-          <span class="mb-5 text-gray-600 flex items-center">
-            <component :is="SendIcon" class="w-6 h-6 inline-block mr-2 text-gray-600" />
+        <div class="p-3">
+          <span class="mb-5 text-gray-700 flex items-center">
+            <component :is="SendIcon" class="w-6 h-6 inline-block mr-2 text-gray-700" />
             Send a Mail
           </span>
           <div class="flex flex-col space-y-4 justify-center w-full">
@@ -79,7 +79,7 @@
       >
         <div class="flex flex-col">
           <p class="text-3xl font-extrabold">Schedule Available</p>
-          <span class="text-lg sm:text-base text-gray-600 mt-3 ">
+          <span class="text-lg sm:text-base text-gray-700 mt-3 ">
             I am available for meetings and discussions during the following hours. Feel free to
             reach out to me within these times.
           </span>

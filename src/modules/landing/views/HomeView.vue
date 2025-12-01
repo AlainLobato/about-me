@@ -7,7 +7,7 @@
         >
           <div class="">
             <div class="flex items-center justify-center gap-4 m-2">
-              <img src="@images/profile.png" alt="" class="h-72 w-72 object-cover rounded-3xl" />
+              <img src="@images/profile.png" alt="Photo of me" class="h-72 w-72 object-cover rounded-3xl" loading="eager"/>
               <h1
                 class="text-3xl sm:text-4xl tracking-tight font-extrabold text-gray-900 sm:leading-none lg:text-5xl xl:text-6xl"
               >
@@ -33,7 +33,7 @@
           </div>
         </div>
         <div class="mt-16 lg:mt-24 xl:mt-0 lg:col-span-5">
-          <p class="text-lg ml-2 mr-2 md:ml-8 md:mr-8 text-gray-600">
+          <p class="text-lg ml-2 mr-2 md:ml-8 md:mr-8 text-gray-800">
             Transforming complex problems into solutions through continuous learning. I am a
             Full-stack Developer with knowledge in start-up environments, data analysis, and IoT
             ecosystems.
