@@ -44,7 +44,7 @@
             <div class="grid grid-cols-3 gap-6 sm:gap-6 xl:gap-8">
               <StatCard label="Age" value="20" />
               <StatCard label="Projects" value="10+" />
-              <StatCard label="Experience" value="2+" />
+              <StatCard label="Experience" value="2y+" />
             </div>
           </div>
           <div class="p-3 items-center mt-12 flex justify-center space-x-3 flex-wrap">

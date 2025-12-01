@@ -8,7 +8,7 @@
           <span class="text-gray-900 py-1 rounded-full font-normal">Alain Lobato</span>
           </RouterLink>
       </div>
-      <nav class="justify-center space-x-4 flex items-center h-10 sm:space-x-6 sm:ml-auto mb-5 sm:mb-0">
+      <nav class="justify-center space-x-4 flex items-center h-10 sm:space-x-6 sm:ml-auto mb-5 sm:mb-0 p-3">
         <AnchorLink path="/" label="Home" />
         <AnchorLink path="/projects" label="Projects" />
         <AnchorLink path="/personal" label="Personal" />
