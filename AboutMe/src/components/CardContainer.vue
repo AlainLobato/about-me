@@ -49,7 +49,7 @@
               :class="{
                 block: true,
                 'w-full select-none rounded-lg bg-gray-900 py-3.5 px-7 text-center align-middle font-sans text-sm font-bold uppercase text-white shadow-md shadow-gray-900/10 transition-all hover:shadow-lg hover:shadow-gray-900/20 hover:bg-gray-800 hover:cursor-pointer': true,
-                'opacity-80 cursor-not-allowed hover:cursor-not-allowed': !websiteUrl
+                'opacity-60 cursor-not-allowed hover:cursor-not-allowed': !websiteUrl
               }"
               :disabled="!websiteUrl"
             >
