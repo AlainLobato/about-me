@@ -21,7 +21,7 @@ import HeaderContainer from '@/components/HeaderContainer.vue';
 
 import photography from '@images/photo.jpeg'
 import music from '@images/music.jpeg'
-import cooking from '@images/tortillas.jpg'
+import cooking from '@images/tortillas.jpeg'
 
 const personalActivities = [
   {
