@@ -2,7 +2,7 @@
   <div class="relative flex flex-col md:flex-row rounded-xl bg-white bg-clip-border text-gray-700 shadow-lg group">
     <div class="relative w-full md:w-2/5 m-0 overflow-hidden rounded-t-xl md:rounded-l-xl md:rounded-tr-none bg-white bg-clip-border text-gray-700 shadow-md md:shadow-none">
       <img
-        :src="activity.imageUrl"
+        :src="activity.imagePath"
         :alt="activity.title"
         class="h-full w-full object-cover transition-transform duration-300 ease-in-out group-hover:scale-105"
         loading="lazy"
@@ -34,7 +34,7 @@ import { defineProps } from 'vue';
 interface Activity {
   title: string;
   description: string;
-  imageUrl: string;
+  imagePath: string;
   tags: string[];
 }
 
