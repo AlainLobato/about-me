@@ -12,6 +12,7 @@
             aria-label="Search components"
             id="headlessui-combobox-input-:r5n:"
             role="combobox"
+            :name="name"
             :type="type"
             aria-expanded="false"
             aria-autocomplete="list"
@@ -36,6 +37,7 @@ defineProps<{
   type: string;
   icon: string;
   modelValue?: string;
+  name?: string;
 }>();
 
 </script>

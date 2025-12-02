@@ -14,6 +14,7 @@
     <textarea
       :placeholder="placeholder"
       rows="6"
+      :name="name"
       class="
         block w-full bg-transparent text-md sm:text-sm text-gray-700 
         placeholder:text-gray-400 
@@ -30,5 +31,6 @@ import { getIcon } from '@/utils/getIcon';
 defineProps<{
   placeholder: string;
   icon: string;
+  name?: string;
 }>();
 </script>

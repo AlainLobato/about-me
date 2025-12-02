@@ -58,19 +58,24 @@
         <div class="p-3">
           <span class="mb-5 text-gray-700 flex items-center">
             <component :is="SendIcon" class="w-6 h-6 inline-block mr-2 text-gray-700" />
-            Send a Mail
+            Send a message
           </span>
-          <div class="flex flex-col space-y-4 justify-center w-full">
-            <InputForm placeholder="Name" type="text" icon="user" />
-            <InputForm placeholder="Email" type="email" icon="at_sign" />
-            <InputForm placeholder="Subject" type="text" icon="pen" />
-            <TextAreaForm placeholder="Message" icon="mail" />
+          <form
+            class="flex flex-col space-y-4 justify-center w-full"
+            method="POST"
+            :action="formUrl"
+            @submit="console.log('Form submitted')"
+          >
+            <InputForm name="name" placeholder="Name" type="text" icon="user" />
+            <InputForm name="_replyto" placeholder="Email" type="email" icon="at_sign" />
+            <InputForm name="subject" placeholder="Subject" type="text" icon="pen" />
+            <TextAreaForm name="message" placeholder="Message" icon="mail" />
             <button
-              class="text-white bg-orange-600 hover:bg-orange-700 font-semibold rounded-md text-sm px-4 py-2.5 opacity-50 cursor-not-allowed"
+              class="text-white bg-orange-600 hover:bg-orange-700 font-semibold rounded-md text-sm px-4 py-2.5 hover:cursor-pointer"
             >
               Send
             </button>
-          </div>
+          </form>
         </div>
       </div>
 
@@ -105,5 +110,7 @@ import TextAreaForm from '@/components/TextAreaForm.vue';
 import MexicoFlag from '@/components/icons/MexicoFlag.vue';
 
 import SendIcon from '@/components/icons/SendIcon.vue';
+
+const formUrl = import.meta.env.VITE_FORMSPREE_ENDPOINT;
 
 </script>
