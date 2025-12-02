@@ -31,6 +31,11 @@ const router = createRouter({
         }
       ]
     },
+    {
+      path: '/success',
+      name: 'success',
+      component: () => import('@/modules/landing/views/SuccessView.vue')
+    },
 
     {
       path: '/:pathMatch(.*)*',

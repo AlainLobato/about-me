@@ -19,6 +19,7 @@
             style="caret-color: rgb(107, 114, 128)"
             :value="modelValue"
             @input="onInput"
+            :required="required"
         />
     </div>
 </template>
@@ -38,6 +39,7 @@ defineProps<{
   icon: string;
   modelValue?: string;
   name?: string;
+  required?: boolean;
 }>();
 
 </script>

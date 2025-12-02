@@ -30,15 +30,9 @@
             <div>
               <h2 class="text-lg font-extrabold">Socials</h2>
               <ul class="flex mt-3 space-x-4">
-                <LinkedIcon
-                  link="https://www.linkedin.com/in/alain-lobato/"
-                  icon-name="linkedin"
-                />
+                <LinkedIcon link="https://www.linkedin.com/in/alain-lobato/" icon-name="linkedin" />
 
-                <LinkedIcon
-                  link="https://github.com/AlainLobato"
-                  icon-name="github"
-                />
+                <LinkedIcon link="https://github.com/AlainLobato" icon-name="github" />
               </ul>
             </div>
             <div>
@@ -46,9 +40,7 @@
               <div class="flex flex-col md:flex-row items-start justify-center mt-3">
                 <MexicoFlag class="w-12 h-12 min-w-12 mr-2" />
                 <span class="text-lg sm:text-base text-gray-700">
-                  Monterrey, Nuevo León
-                  <br>
-                  México
+                  Monterrey, Nuevo León. México.
                 </span>
               </div>
             </div>
@@ -63,13 +55,15 @@
           <form
             class="flex flex-col space-y-4 justify-center w-full"
             method="POST"
-            :action="formUrl"
+            action="https://api.web3forms.com/submit"
             @submit="console.log('Form submitted')"
           >
-            <InputForm name="name" placeholder="Name" type="text" icon="user" />
-            <InputForm name="_replyto" placeholder="Email" type="email" icon="at_sign" />
-            <InputForm name="subject" placeholder="Subject" type="text" icon="pen" />
-            <TextAreaForm name="message" placeholder="Message" icon="mail" />
+            <input type="hidden" name="access_key" :value="formApiKey" />
+            <input type="hidden" name="redirect" :value="redirectUrl" />
+            <InputForm name="name" placeholder="Name" type="text" icon="user" required />
+            <InputForm name="email" placeholder="Email" type="email" icon="at_sign" required />
+            <InputForm name="subject" placeholder="Subject" type="text" icon="pen" required />
+            <TextAreaForm name="message" placeholder="Message" icon="mail" required />
             <button
               class="text-white bg-orange-600 hover:bg-orange-700 font-semibold rounded-md text-sm px-4 py-2.5 hover:cursor-pointer"
             >
@@ -84,7 +78,7 @@
       >
         <div class="flex flex-col">
           <p class="text-3xl font-extrabold">Schedule Available</p>
-          <span class="text-lg sm:text-base text-gray-700 mt-3 ">
+          <span class="text-lg sm:text-base text-gray-700 mt-3">
             I am available for meetings and discussions during the following hours. Feel free to
             reach out to me within these times.
           </span>
@@ -104,13 +98,13 @@
 
 <script setup lang="ts">
 import HeaderContainer from '@/components/HeaderContainer.vue'
-import InputForm from '@/components/InputForm.vue';
-import LinkedIcon from '@/components/LinkedIcon.vue';
-import TextAreaForm from '@/components/TextAreaForm.vue';
-import MexicoFlag from '@/components/icons/MexicoFlag.vue';
+import InputForm from '@/components/InputForm.vue'
+import LinkedIcon from '@/components/LinkedIcon.vue'
+import TextAreaForm from '@/components/TextAreaForm.vue'
+import MexicoFlag from '@/components/icons/MexicoFlag.vue'
 
-import SendIcon from '@/components/icons/SendIcon.vue';
+import SendIcon from '@/components/icons/SendIcon.vue'
 
-const formUrl = import.meta.env.VITE_FORMSPREE_ENDPOINT;
-
+const formApiKey = import.meta.env.VITE_WEB3FORMS_API_KEY
+const redirectUrl = import.meta.env.VITE_CONTACT_REDIRECT_URL || 'http://localhost:5173/contact'
 </script>
