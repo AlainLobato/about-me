@@ -5,7 +5,6 @@
   >
     <input type="checkbox" id="switchInp" class="hidden absolute l-[-99999px]" />
     <label
-      for="switchInp"
       class="inlinke-block text-end cursor-pointer filter-[drop-shadow(3px_2px_3px_rgba(0,0,0,0.5))]"
     >
       <canvas id="stringCanvas" class="border-0 outline-0" width="180" height="150"></canvas>
@@ -217,12 +216,13 @@ onMounted(() => {
 
   animationId = requestAnimationFrame(loop)
 
-  // handlers now accept optional event so we can preventDefault for touch
   const handleMouseUp = (e?: Event) => {
     e?.preventDefault?.()
     beads[BEAD_COUNT - 1]?.addMomentum(INITIAL_X_MOMENTUM, 0)
     if (beads[0]) beads[0].parent.y = 0
     running = true
+    switchInp.checked = !switchInp.checked
+    switchInp.dispatchEvent(new Event('change'))
   }
 
   const handleMouseDown = (e?: Event) => {
@@ -236,28 +236,15 @@ onMounted(() => {
     toggleDarkMode()
   }
 
-  canvas.addEventListener('mouseup', handleMouseUp)
-  canvas.addEventListener('mousedown', handleMouseDown)
-
   canvas.addEventListener('pointerdown', handleMouseDown)
   canvas.addEventListener('pointerup', handleMouseUp)
 
-  canvas.addEventListener('touchstart', handleMouseDown, { passive: false })
-  canvas.addEventListener('touchend', handleMouseUp)
-
   switchInp.addEventListener('change', handleSwitchChange)
 
-  // cleanup listeners when component unmounts
   onUnmounted(() => {
     try {
-      canvas.removeEventListener('mouseup', handleMouseUp)
-      canvas.removeEventListener('mousedown', handleMouseDown)
       canvas.removeEventListener('pointerdown', handleMouseDown)
       canvas.removeEventListener('pointerup', handleMouseUp)
-      document.removeEventListener('pointerup', handleMouseUp)
-      canvas.removeEventListener('touchstart', handleMouseDown)
-      canvas.removeEventListener('touchend', handleMouseUp)
-      document.removeEventListener('touchend', handleMouseUp)
       switchInp.removeEventListener('change', handleSwitchChange)
     } catch (e) {
       console.error('Error removing event listeners in PullCord component:', e)
