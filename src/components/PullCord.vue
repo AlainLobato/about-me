@@ -217,20 +217,18 @@ onMounted(() => {
 
   animationId = requestAnimationFrame(loop)
 
-  const handleMouseUp = () => {
+  // handlers now accept optional event so we can preventDefault for touch
+  const handleMouseUp = (e?: Event) => {
+    e?.preventDefault?.()
     beads[BEAD_COUNT - 1]?.addMomentum(INITIAL_X_MOMENTUM, 0)
     if (beads[0]) beads[0].parent.y = 0
     running = true
   }
 
-  const handleMouseDown = () => {
-    if (beads[0]) beads[0].parent.y = BEAD_DIST
+  const handleMouseDown = (e?: Event) => {
+    e?.preventDefault?.()
+    if (beads[0]) beads[0].parent.y = BEAD_DIST * 1.5
     running = true
-  }
-
-  const handleVisibilityChange = () => {
-    lastTime = new Date().getTime()
-    running = !document.hidden
   }
 
   const handleSwitchChange = function (this: HTMLInputElement) {
@@ -240,8 +238,31 @@ onMounted(() => {
 
   canvas.addEventListener('mouseup', handleMouseUp)
   canvas.addEventListener('mousedown', handleMouseDown)
-  document.addEventListener('visibilitychange', handleVisibilityChange)
+
+  canvas.addEventListener('pointerdown', handleMouseDown)
+  canvas.addEventListener('pointerup', handleMouseUp)
+
+  canvas.addEventListener('touchstart', handleMouseDown, { passive: false })
+  canvas.addEventListener('touchend', handleMouseUp)
+
   switchInp.addEventListener('change', handleSwitchChange)
+
+  // cleanup listeners when component unmounts
+  onUnmounted(() => {
+    try {
+      canvas.removeEventListener('mouseup', handleMouseUp)
+      canvas.removeEventListener('mousedown', handleMouseDown)
+      canvas.removeEventListener('pointerdown', handleMouseDown)
+      canvas.removeEventListener('pointerup', handleMouseUp)
+      document.removeEventListener('pointerup', handleMouseUp)
+      canvas.removeEventListener('touchstart', handleMouseDown)
+      canvas.removeEventListener('touchend', handleMouseUp)
+      document.removeEventListener('touchend', handleMouseUp)
+      switchInp.removeEventListener('change', handleSwitchChange)
+    } catch (e) {
+      console.error('Error removing event listeners in PullCord component:', e)
+    }
+  })
 })
 
 onUnmounted(() => {
