@@ -1,9 +1,9 @@
 <template>
-    <img
-      class="relative flex h-10 w-10 sm:w-14 sm:h-14 shrink-0 overflow-hidden"
-      :alt="'icon-' + props.iconName"
-      :src="getIcon(props.iconName)"
-    />
+  <img
+    class="relative flex h-10 w-10 sm:w-12 sm:h-12 lg:w-14 lg:h-14 shrink-0 overflow-hidden m-1"
+    :alt="'icon-' + props.iconName"
+    :src="getIcon(props.iconName)"
+  />
 </template>
 
 <script setup lang="ts">
@@ -19,20 +19,20 @@ const iconsMap = {
   arduino: 'https://www.svgrepo.com/show/473549/arduino.svg',
   git: 'https://www.svgrepo.com/show/452210/git.svg',
   linux: 'https://www.svgrepo.com/show/354004/linux-tux.svg',
-};
+}
 
 const props = defineProps<{
-  iconName: string;
-}>();
+  iconName: string
+}>()
 
-type IconKey = keyof typeof iconsMap;
+type IconKey = keyof typeof iconsMap
 
 const getIcon = (tech: string): string => {
-  const key = tech.toLowerCase() as IconKey;
+  const key = tech.toLowerCase() as IconKey
   if (iconsMap.hasOwnProperty(key)) {
-     return iconsMap[key]; 
+    return iconsMap[key]
   }
-  
-  return '';
+
+  return ''
 }
 </script>

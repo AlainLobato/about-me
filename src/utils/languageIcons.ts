@@ -39,6 +39,8 @@ import AtSignIcon from '@icons/AtSignIcon.vue'
 import LinkedinIcon from '@icons/LinkedinIcon.vue'
 import PenIcon from '@icons/PenIcon.vue'
 import MexicoFlag from '@icons/MexicoFlag.vue'
+import TailwindColorIcon from '@/components/icons/TailwindColorIcon.vue'
+import DatabaseIcon from '@/components/icons/DatabaseIcon.vue'
 
 export const icons_map = {
   androidstudio: AndroidStudioIcon,
@@ -51,6 +53,7 @@ export const icons_map = {
   capacitor: CapacitorIcon,
   css: CSSIcon,
   docker: DockerIcon,
+  database: DatabaseIcon,
   express: ExpressIcon,
   firebase: FirebaseIcon,
   flask: FlaskIcon,
@@ -78,6 +81,7 @@ export const icons_map = {
   send: SendIcon,
   sqlite: SqLiteIcon,
   tailwind: TailwindIcon,
+  tailwind_color: TailwindColorIcon,
   typescript: TypeScriptIcon,
   user: UserIcon,
   vite: ViteIcon,

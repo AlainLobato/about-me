@@ -1,12 +1,12 @@
 <template>
-  <div class="bg-white flex flex-col w-screen gap-4 pt-8 items-center">
+  <div class="bg-surface flex flex-col w-screen gap-4 pt-8 items-center">
     <HeaderContainer
       title="My Projects"
       description="Here are some of the projects I've worked on. Feel free to explore and check out the code repositories! The disable buttons are for projects that are still in development, not yet publicly available or not hosted online."
     />
 
     <div class="flex w-full overflow-hidden items-center justify-center px-10 pb-2.5">
-      <div class="w-full max-w-2xl bg-white rounded-lg shadow-md shadow-blue-gray-500/40">
+      <div class="w-full max-w-2xl bg-surface rounded-lg shadow-md shadow-blue-gray-500/40">
         <InputForm
           placeholder="Search projects by title or technology..."
           type="text"
@@ -64,5 +64,4 @@ const filteredProjects = computed(() => {
       ),
   )
 })
-
 </script>

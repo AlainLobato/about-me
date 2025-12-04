@@ -91,7 +91,7 @@ export const projects = [
     description:
       'A system to monitor and control the environment inside a greenhouse using IoT devices. It collects data on temperature, humidity, and soil moisture, and allows an API with a server in ESP32 to control actuators.',
     image: iot,
-    technologies: ['Cpp', 'ESP32', 'Arduino'],
+    technologies: ['Cpp', 'Arduino'],
   },
   {
     title: 'Data Mining: Monterrey Air Quality',
