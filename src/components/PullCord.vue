@@ -1,6 +1,6 @@
 <template>
   <div
-    class="top-28 sm:top-16 right-[-11%] xs:right-[-17%] sm:right-[-7%] md:right-[-5%] lg:right-0 z-50 select-none fixed"
+    class="top-28 sm:top-16 right-[-11%] xs:right-[-17%] sm:right-[-7%] md:right-[-5%] lg:right-0 z-50 select-none"
     id="switchBg"
   >
     <input type="checkbox" id="switchInp" class="hidden absolute l-[-99999px]" />
