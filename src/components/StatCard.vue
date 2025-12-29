@@ -2,11 +2,7 @@
   <div class="text-center sm:flex sm:items-center sm:justify-center">
     <div class="sm:shrink-0">
       <div class="flow-root">
-        <div
-          class="border w-fit transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent hover:bg-primary/80 hover:text-white inline-flex items-center justify-center px-3 py-0.5 text-sm font-medium leading-5 text-primary bg-bg-primary rounded-full"
-        >
-          {{ label }}
-        </div>
+        <BadgeComponent :label="label" />
         <p class="text-3xl sm:text-4xl font-bold text-text-primary">{{ value }}</p>
       </div>
     </div>
@@ -14,8 +10,12 @@
 </template>
 
 <script setup lang="ts">
-defineProps<{
+import BadgeComponent from './BadgeComponent.vue'
+
+interface Props {
   label: string
   value: string
-}>()
+}
+
+defineProps<Props>()
 </script>

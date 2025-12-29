@@ -1,6 +1,5 @@
 <template>
   <div class="flex flex-col h-screen">
-    <!-- <div class="absolute h-screen bg-red-500 w-0.5 left-[50%] transform -translate-x-1/2 ko0"></div> -->
     <header
       class="flex justify-center items-center space-x-2 h-28 border-b border-gray-300 sm:h-16 lg:px-8 flex-col sm:flex-row bg-surface"
     >
@@ -15,16 +14,10 @@
       >
         <AnchorLink path="/" label="Home" />
         <AnchorLink path="/projects" label="Projects" />
-        <AnchorLink path="/personal" label="Personal" />
+        <AnchorLink path="/certifications" label="Certifications" />
+        <!-- <AnchorLink path="/personal" label="Personal" /> -->
         <AnchorLink path="/contact" label="Contact" />
       </nav>
-      <!-- <button
-        @click="toggleDarkMode"
-        class="rounded-full bg-black w-8 h-8 cursor-pointer flex justify-center items-center hover:bg-gray-800 transition-colors"
-      >
-        <span v-if="isDarkMode" class="text-yellow-400">🌞</span>
-        <span v-else class="text-gray-200">🌙</span>
-      </button> -->
       <PullCord class="absolute" />
     </header>
 

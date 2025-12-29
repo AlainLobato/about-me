@@ -12,37 +12,42 @@ const router = createRouter({
         {
           path: '/',
           name: 'home',
-          component: HomeView
+          component: HomeView,
         },
         {
           path: '/contact',
           name: 'contact',
-          component: () => import('@/modules/landing/views/ContactVIew.vue')
+          component: () => import('@/modules/landing/views/ContactVIew.vue'),
         },
         {
           path: '/projects',
           name: 'projects',
-          component: () => import('@/modules/landing/views/ProjectsView.vue')
+          component: () => import('@/modules/landing/views/ProjectsView.vue'),
         },
+        // {
+        //   path: '/personal',
+        //   name: 'personal',
+        //   component: () => import('@/modules/landing/views/PersonalView.vue')
+        // }
         {
-          path: '/personal',
-          name: 'personal',
-          component: () => import('@/modules/landing/views/PersonalView.vue')
-        }
-      ]
+          path: '/certifications',
+          name: 'certifications',
+          component: () => import('@/modules/landing/views/CertificationsView.vue'),
+        },
+      ],
     },
     {
       path: '/success',
       name: 'success',
-      component: () => import('@/modules/landing/views/SuccessView.vue')
+      component: () => import('@/modules/landing/views/SuccessView.vue'),
     },
 
     {
       path: '/:pathMatch(.*)*',
       name: 'NotFound',
-      component: () => import('@/modules/common/pages/NotFound.vue')
-    }
-  ]
+      component: () => import('@/modules/common/pages/NotFound.vue'),
+    },
+  ],
 })
 
 export default router

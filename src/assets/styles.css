@@ -20,18 +20,6 @@ html.dark {
   --color-mode: #0a0909;
 }
 
-/* body {
-  background-color: var(--color-bg-surface);
+.router-link-exact-active {
+  @apply text-primary;
 }
-
-.primary-text {
-  color: var(--color-text-primary);
-}
-
-.bg-nav {
-  background-color: var(--bg-nav);
-}
-
-.bg-badge {
-  background-color: var(--color-bg-primary);
-} */

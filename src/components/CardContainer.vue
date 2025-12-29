@@ -54,6 +54,8 @@
               }"
               :disabled="!websiteUrl"
             >
+              <ExternalLinkIcon class="inline-block mr-2" />
+
               Visit Website
             </button>
           </a>
@@ -64,6 +66,7 @@
 </template>
 
 <script setup lang="ts">
+import ExternalLinkIcon from './icons/ExternalLinkIcon.vue'
 import GithubIcon from './icons/GithubIcon.vue'
 import { getIcon } from '@/utils/getIcon'
 

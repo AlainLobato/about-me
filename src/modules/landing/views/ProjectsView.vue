@@ -48,7 +48,7 @@ import { ref, computed } from 'vue'
 import CardContainer from '@/components/CardContainer.vue'
 import HeaderContainer from '@/components/HeaderContainer.vue'
 import InputForm from '@/components/InputForm.vue'
-import { projects } from '@/utils/projects'
+import { projects } from '@/constants/projects'
 
 const filterValue = ref('')
 const filteredProjects = computed(() => {

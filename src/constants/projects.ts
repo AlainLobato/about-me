@@ -4,6 +4,7 @@ import datamining from '@images/datamining.webp'
 import iot from '@images/iot.webp'
 import invitation from '@images/invitation.webp'
 import kidfit from '@images/kidfit.webp'
+import moviesapp from '@images/moviesapp.jpeg'
 import numanalysis from '@images/numanalysis.webp'
 import pokemongame from '@images/pokemongame.jpg'
 import portfolio from '@images/portfolio.jpg'
@@ -45,6 +46,14 @@ export const projects = [
     repositoryUrl: 'https://github.com/AlainLobato/KidFit-Store',
     websiteUrl: 'https://alainlobato.github.io/KidFit-Store/index.html',
     technologies: ['HTML', 'CSS', 'JavaScript', 'Bootstrap', 'Github'],
+  },
+  {
+    title: 'Movies App',
+    description:
+      'A movie search application that helps users to view details for movies including actors, title and relevant information. It uses the TMDB API to fetch movie data with TanStack Query to handle the requests.',
+    image: moviesapp,
+    repositoryUrl: 'https://github.com/AlainLobato/movies-app',
+    technologies: ['ReactExpo', 'TypeScript', 'Tailwind', 'Github'],
   },
   {
     title: 'Cashy App',

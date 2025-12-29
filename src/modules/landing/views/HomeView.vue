@@ -60,22 +60,26 @@
             <MainIcon iconName="TypeScript" />
             <MainIcon iconName="Angular" />
             <component
+              :is="getIcon('react')"
+              class="relative flex h-10 w-10 sm:w-12 sm:h-12 lg:w-14 lg:h-14 shrink-0 overflow-hidden text-[#3ebfe2] mr-1"
+            />
+            <component
               :is="getIcon('database')"
-              class="relative flex h-10 w-10 sm:w-12 sm:h-12 lg:w-14 lg:h-14  shrink-0 overflow-hidden text-primary"
+              class="relative flex h-10 w-10 sm:w-12 sm:h-12 lg:w-14 lg:h-14 shrink-0 overflow-hidden text-primary"
             />
             <MainIcon iconName="Docker" />
             <component
               :is="getIcon('arduino')"
-              class="relative flex h-10 w-10 sm:w-12 sm:h-12 lg:w-14 lg:h-14  shrink-0 overflow-hidden"
+              class="relative flex h-10 w-10 sm:w-12 sm:h-12 lg:w-14 lg:h-14 shrink-0 overflow-hidden text-[#00979C]"
             />
             <MainIcon iconName="Git" />
             <component
               :is="getIcon('linux')"
-              class="relative flex h-10 w-10 sm:w-12 sm:h-12 lg:w-14 lg:h-14  shrink-0 overflow-hidden text-text-primary"
+              class="relative flex h-10 w-10 sm:w-12 sm:h-12 lg:w-14 lg:h-14 shrink-0 overflow-hidden text-text-primary"
             />
             <component
               :is="getIcon('tailwind_color')"
-              class="relative flex h-10 w-10 sm:w-12 sm:h-12 lg:w-14 lg:h-14  shrink-0 overflow-hidden"
+              class="relative flex h-10 w-10 sm:w-12 sm:h-12 lg:w-14 lg:h-14 shrink-0 overflow-hidden"
             />
           </div>
         </div>

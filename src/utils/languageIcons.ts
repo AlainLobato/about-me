@@ -41,6 +41,7 @@ import PenIcon from '@icons/PenIcon.vue'
 import MexicoFlag from '@icons/MexicoFlag.vue'
 import TailwindColorIcon from '@/components/icons/TailwindColorIcon.vue'
 import DatabaseIcon from '@/components/icons/DatabaseIcon.vue'
+import ExpoIcon from '@/components/icons/ExpoIcon.vue'
 
 export const icons_map = {
   androidstudio: AndroidStudioIcon,
@@ -54,6 +55,7 @@ export const icons_map = {
   css: CSSIcon,
   docker: DockerIcon,
   database: DatabaseIcon,
+  reactexpo: ExpoIcon,
   express: ExpressIcon,
   firebase: FirebaseIcon,
   flask: FlaskIcon,
