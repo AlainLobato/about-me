@@ -3,7 +3,7 @@
     <div class="sm:shrink-0">
       <div class="flow-root">
         <BadgeComponent :label="label" />
-        <p class="text-3xl sm:text-4xl font-bold text-text-primary">{{ value }}</p>
+        <p class="text-3xl sm:text-4xl font-bold text-text-primary mt-2">{{ value }}</p>
       </div>
     </div>
   </div>

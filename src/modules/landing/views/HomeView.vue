@@ -10,7 +10,7 @@
               <img
                 src="@images/profile.png"
                 alt="Photo of me"
-                class="h-72 w-72 object-cover rounded-3xl"
+                class="h-72 w-72 object-cover rounded-xl"
                 loading="eager"
               />
               <div
@@ -47,40 +47,21 @@
           </p>
           <div class="mt-12">
             <div class="grid grid-cols-3 gap-6 md:gap-8 lg:gap-6 xl:gap-8">
-              <StatCard label="Age" value="20" />
+              <StatCard label="Courses" value="15+" />
               <StatCard label="Projects" value="10+" />
               <StatCard label="Experience" value="2y+" />
             </div>
           </div>
-          <div class="p-2 mt-8 md:mt-12 flex justify-center flex-wrap">
+          <div class="p-2 mt-8 md:mt-12 flex justify-center flex-wrap items-center transition-all">
             <MainIcon iconName="Python" />
             <MainIcon iconName="JS" />
             <MainIcon iconName="Rails" />
             <MainIcon iconName="Vue" />
             <MainIcon iconName="TypeScript" />
             <MainIcon iconName="Angular" />
-            <component
-              :is="getIcon('react')"
-              class="relative flex h-10 w-10 sm:w-12 sm:h-12 lg:w-14 lg:h-14 shrink-0 overflow-hidden text-[#3ebfe2] mr-1"
-            />
-            <component
-              :is="getIcon('database')"
-              class="relative flex h-10 w-10 sm:w-12 sm:h-12 lg:w-14 lg:h-14 shrink-0 overflow-hidden text-primary"
-            />
+            <MainIcon iconName="React" />
             <MainIcon iconName="Docker" />
-            <component
-              :is="getIcon('arduino')"
-              class="relative flex h-10 w-10 sm:w-12 sm:h-12 lg:w-14 lg:h-14 shrink-0 overflow-hidden text-[#00979C]"
-            />
             <MainIcon iconName="Git" />
-            <component
-              :is="getIcon('linux')"
-              class="relative flex h-10 w-10 sm:w-12 sm:h-12 lg:w-14 lg:h-14 shrink-0 overflow-hidden text-text-primary"
-            />
-            <component
-              :is="getIcon('tailwind_color')"
-              class="relative flex h-10 w-10 sm:w-12 sm:h-12 lg:w-14 lg:h-14 shrink-0 overflow-hidden"
-            />
           </div>
         </div>
       </div>
@@ -93,5 +74,4 @@ import StatCard from '@/components/StatCard.vue'
 import MainIcon from '@/components/MainIcon.vue'
 import SendIcon from '@/components/icons/SendIcon.vue'
 import GithubIcon from '@/components/icons/GithubIcon.vue'
-import { getIcon } from '@/utils/getIcon'
 </script>
